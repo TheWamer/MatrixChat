@@ -33,18 +33,3 @@
             <textarea x-model="newMessage" placeholder="Type your message here..." class="message-input border p-2 w-full mb-2 rounded resize-y focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
             <button @click="sendMessage()" class="bg-green-500 text-white p-2 w-full rounded hover:bg-green-600 transition">Send</button>
           </div>
-
-
-          <!-- Запрошення та приєднання -->
-          <div class="space-y-2">
-            <div>
-              <input x-model="inviteUser" placeholder="Invite user (e.g., @user:matrix.org)" class="border p-2 w-full mb-1 rounded">
-              <button @click="inviteUserToRoom()" class="bg-purple-500 text-white p-2 w-full rounded hover:bg-purple-600 transition">Invite</button>
-            </div>
-            <div>
-              <input x-model="joinRoomId" placeholder="Room ID to join (e.g., !roomId:matrix.org)" class="border p-2 w-full mb-1 rounded">
-              <button @click="joinRoom()" class="bg-yellow-500 text-white p-2 w-full rounded hover:bg-yellow-600 transition">Join Room</button>
-            </div>
-          </div>
-        </div>
-      </template>
