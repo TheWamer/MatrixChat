@@ -5,12 +5,13 @@
   <title>Matrix Chat</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
+  <script src="https://unpkg.com/@alpinejs/clipboard@3.x.x/dist/cdn.min.js" defer></script>
   <script src="./login/login.js"></script>
   <script src="./sidebar/sidebar.js"></script>
   <script src="./chat/chat.js"></script>
-   <script src="./user/user.js"></script>
+  <script src="./user/user.js"></script>
   <link rel="stylesheet" href="index.css">
-  <link rel = "stylesheet" href = "./sidebar/sidebar.css"></style>
+  <link rel = "stylesheet" href = "./sidebar/sidebar.css">
   
 </head>
 <body class="index-container bg-gray-100 flex justify-center">
@@ -94,7 +95,9 @@
     switchRoom,
     sendMessage,
     fetchMessages,
-    fetchRoomMembers
+    fetchRoomMembers,
+    kickUser: kickUser,
+    leaveRoom: leaveRoom
   }
 }
 </script>
