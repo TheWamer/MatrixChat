@@ -16,15 +16,15 @@
             </button>
           </li>
         </template>
-        <div class="mt-4">
-        <input x-model="newRoomName" placeholder="New room name" class="border p-2 w-full mb-2 rounded">
-        <button @click="createRoom()" class="bg-indigo-500 text-white p-2 w-full rounded hover:bg-indigo-600 transition">Create Room</button>
-        <p x-show="newRoomId" class="text-sm text-gray-600 mt-1">Room ID: <span x-text="newRoomId"></span></p>
-        </div>
-      </ul>
-    </div>
+<div class="mt-4">
+    <input x-model="newRoomName" placeholder="New room name" class="border p-2 w-full mb-2 rounded">
+    <button @click="createRoom()" class="bg-indigo-500 text-white p-2 w-full rounded hover:bg-indigo-600 transition">Create Room</button>
+    <p x-show="newRoomId" class="text-sm text-gray-600 mt-1">Room ID: <span x-text="newRoomId"></span></p>
+</div>
+</ul>
+</div>
 
-    
-    
-  </div>
+
+
+</div>
 </template>
